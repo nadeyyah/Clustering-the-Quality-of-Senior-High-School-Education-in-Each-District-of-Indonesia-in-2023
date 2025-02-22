@@ -1,7 +1,12 @@
 # Clustering-the-Quality-of-Senior-High-School-Education-in-Each-District-of-Indonesia-in-2023
 
-<img src = "https://asset.kompas.com/crops/re-smGujOpms3lbCmHyEeCm4GiY=/46x160:755x633/1200x800/data/photo/2022/05/14/627f60a0ec075.jpg"
-alt = "BANNER SMA" width = "50%"/>
+Credit: Nadia Alzena, Fathina Arifa, Sherly Adinda, Aulia Naurah 
+<div style="text-align: center;">
+  <img src="https://asset.kompas.com/crops/re-smGujOpms3lbCmHyEeCm4GiY=/46x160:755x633/1200x800/data/photo/2022/05/14/627f60a0ec075.jpg" 
+       alt="BANNER SMA" 
+       style="width: 50%;">
+  <p>Sumber Gambar: Kompas.com</p>
+</div>
 
 # 📌 Latar Belakang 
 
@@ -29,7 +34,37 @@ X6 : Tingkat penyelesaian pendidikan minimal tamat SMA/sederajat <br>
 <p align = "left">
 Metode yang digunakan pada analisis kali ini adalah <b> Analisis Klaster Hierarki </b>, dikarenakan belum ditemukan terkait banyak claster yang akan digunakan sebab belum ada penelitian terdahulu yang membahas secara detail. 
 
+## 🖥 Languages Programs & Library 
+Bahasa pemrograman yang digunakan dalam proses analisis data adalah <b>R</b>, dengan beberapa bantuan <i>library</i> sebagai berikut:<br>
+<b>
+1. library(readxl) <br>
+2. library(cluster) <br>
+3. library(dendextend) <br>
+4. library(factoextra) <br>
+5. library(tidyverse) <br>
+6. library(clusterSim) <br>
+</b>
+  
 # 📋 Hasil Analisis
-## Statistika Deskriptif
+## 📊 Statistika Deskriptif
+Beberapa informasi penting yang dapat diambil dari output tersebut yaitu: <br>
+1. APS memilik rata-ratasebesar 75.495%, APK memiliki rata-rata sebesar 88.72% dan APM sebesar 67.81%. Angka tersebut <b>masih
+berada dibawah target nasional yaitu 100%</b>.<br>
+2. Rata- rata angka melek huruf sebesar 98.71% menunjukkan <b>tingkat melek huruf yang tinggi</b>.<br>
+3. Rata-rata lama sekolah yang <b> masih rendah </b> yaitu sekitar 9,3 tahun. <br>
+4. Nilai standart deviasi yang cukup besar pada Tingkat penyelesaian pendidikan yaitu 10.687%
+menunjukkan perbedaan yang cukup tinggi antar provinsi artinya partisipasi penduduk yang sedang
+mengenyam pendidikan sesuai dengan jenjang pendidikannya di Indonesia masih belum merata untuk
+setiap Provinsi.
 
+## 🌍 Analisis <i> Cluster </i>
 
+### Korelasi Jarak <i> Cophnetic </i>
+Berdasarkan analisis yang telah dilakukan, diperoleh hasil bila metode <i>Average Linkage </i> memiliki korelasi terbesar dengan nilai 
+<b> 0.8716066 </b>, dengan demikian data disimpulkan bila metode <i> Average Linkage </i> merupakan metode pengelompokan terbaik. 
+
+### Penentuan Jumlah <i> Cluster </i> Optimal
+Terdapat 3 metode yang digunakan untuk mengetahui jumlah <i>cluster</i> optimal, antara lain:
+1. <i> Elbow </i> <br>
+2. <i> Silhouette Score </i> <br>
+3. <i> David Bouldin Index </i> 
