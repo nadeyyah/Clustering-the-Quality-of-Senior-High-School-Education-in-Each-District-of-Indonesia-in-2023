@@ -67,4 +67,46 @@ Berdasarkan analisis yang telah dilakukan, diperoleh hasil bila metode <i>Averag
 Terdapat 3 metode yang digunakan untuk mengetahui jumlah <i>cluster</i> optimal, antara lain:
 1. <i> Elbow </i> <br>
 2. <i> Silhouette Score </i> <br>
-3. <i> David Bouldin Index </i> 
+3. <i> David Bouldin Index </i>
+
+### Dendogram 
+
+### Klasterisasi Wilayah
+
+<b> Tabel Anggota <i>Cluster</i> </b>
+<table border="1">
+  <thead>
+    <tr>
+      <th> <i> Cluster </i> </th>
+      <th> Provinsi </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 1 </td>
+      <td> Aceh, Sumatera Utara, Sumatera Barat, Riau, Jambi, Sumatera Selatan, Bengkulu,
+Lampung, Kep. Bangka Belitung, Kepulauan Riau, Jawa Barat, Jawa Tengah, Jawa
+Timur, Banten, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Kalimantan Barat,
+Kalimantan Tengah, Kalimantan Selatan, Kalimantan Timur, Kalimantan Utara,
+Sulawesi Utara, Sulawesi Tengah, Sulawesi Selatan, Sulawesi Tenggara, Gorontalo,
+Sulawesi Barat, Maluku, Maluku Utara, Papua Barat</td>
+    </tr>
+    <tr>
+      <td> 2 </td>
+      <td> DKI Jakarta </td>
+    </tr>
+    <tr>
+      <td> 3 </td>
+      <td> DI Yogyakarta </td>
+    </tr>
+    <tr>
+      <td> 4 </td>
+      <td> Papua </td>
+    </tr>
+  </tbody>
+</table>
+
+### Karakteristik Setiap <i>Cluster</i>
+
+### Kesimpulan 
+
