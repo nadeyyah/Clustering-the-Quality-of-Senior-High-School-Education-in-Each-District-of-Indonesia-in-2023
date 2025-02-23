@@ -1,4 +1,4 @@
-# Clustering-the-Quality-of-Senior-High-School-Education-in-Each-District-of-Indonesia-in-2023
+# Clustering the Quality of Senior High School Education in Each District of Indonesia in 2023
 
 Credit: Nadia Alzena, Fathina Arifa, Sherly Adinda, Aulia Naurah 
 <div style="text-align: center;">
