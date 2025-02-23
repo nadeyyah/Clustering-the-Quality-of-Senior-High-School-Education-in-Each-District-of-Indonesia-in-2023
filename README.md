@@ -57,6 +57,9 @@ Bahasa pemrograman yang digunakan dalam proses analisis data adalah <b>R</b>, de
 
 # 📋 Hasil Analisis
 ## 📊 Statistika Deskriptif
+
+<img src = "Statistika Deskriptif.png">
+
 Beberapa informasi penting yang dapat diambil dari output tersebut yaitu: <br>
 1. APS memilik rata-ratasebesar 75.495%, APK memiliki rata-rata sebesar 88.72% dan APM sebesar 67.81%. Angka tersebut <b>masih
 berada dibawah target nasional yaitu 100%</b>.<br>
