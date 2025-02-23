@@ -70,6 +70,7 @@ Terdapat 3 metode yang digunakan untuk mengetahui jumlah <i>cluster</i> optimal,
 3. <i> David Bouldin Index </i>
 
 ### Dendogram 
+<img src="Cluster Dendogram .png" alt="Dendrogram" width="500" height="500">
 
 ### Klasterisasi Wilayah
 
