@@ -29,7 +29,16 @@ X4 : Angka Melek Huruf (AMH) pada kelompok umur 15-59 tahun <br>
 X5 : Rata-rata lama sekolah penduduk umur 15 tahun ke atas <br>
 X6 : Tingkat penyelesaian pendidikan minimal tamat SMA/sederajat <br> 
 </b>
+<br>
 
+<b> Catatan: </b>
+- Angka Partisipasi Sekolah (APS): Proporsi penduduk pada kelompok usia jenjang pendidikan tertentu yang masih bersekolah terhadap penduduk pada kelompok usia tersebut.<br>
+- Angka Partisipasi Kasar (APK): Proporsi penduduk yang masih bersekolah pada suatu jenjang pendidikan tertentu tanpa memandang usia
+ terhadap jumlah penduduk kelompok usia yang sesuai dengan jenjang pendidikan tersebut.<br>
+- Angka Partisipasi Murni (APM): Proporsi penduduk pada kelompok usia jenjang pendidikan tertentu yang masih bersekolah pada jenjang pendidikan yang sesuai dengan kelompok usianya terhadap penduduk pada kelompok usia tersebut.<br>
+- Angka Melek Huruf (AHM):  Proporsi penduduk kelompok umur tertentu yang memiliki kemampuan membaca dan menulis kalimat sederhana dalam huruf latin, huruf arab, dan huruf lainnya (seperti huruf jawa, kanji, dll) terhadap
+penduduk kelompok umur tersebut.
+<br>
 # 🔍 Metode yang Digunakan
 <p align = "left">
 Metode yang digunakan pada analisis kali ini adalah <b> Analisis Klaster Hierarki </b>, dikarenakan belum ditemukan terkait banyak claster yang akan digunakan sebab belum ada penelitian terdahulu yang membahas secara detail. 
@@ -69,10 +78,19 @@ Terdapat 3 metode yang digunakan untuk mengetahui jumlah <i>cluster</i> optimal,
 2. <i> Silhouette Score </i> <br>
 3. <i> David Bouldin Index </i>
 
+- <b> Metode Elbow </b>: Berdasarkan plot tersebut terlihat bahwa pada saat jumlah cluster sebanyak 4 sudah tidak terjadi penurunan   WSS yang signifikan. <br>
+- <b> Silhouette Score </b>:Berdasarkan plot diatas,terlihat bahwa nilai 
+silhoutte tertinggi adalah pada k= 4, menunjukan bahwa jumlah cluster optimal untuk pemisahan yang jelas adalah 4 <br>
+- <b> David Bouldin Index </b>:Berdasarkan plot diatas, nilai david-Bouldin index
+terendah tercapai pada k = 4 yang berati jumlah cluster optimal adalah 4 <br> <br>
+<b>Dikarenakan seluruh metode menunjukkan cluster optimal ada pada k=4, maka k=4 digunakan sebagai jumlah pengelompokan dalam analisis cluster.</b>
+
 ### Dendogram 
-<img src="Cluster Dendogram .png" alt="Dendrogram" width="500" height="500">
+<img src="Cluster Dendogram .png" alt="Dendrogram" width="600" height="500">
 
 ### Klasterisasi Wilayah
+
+<img src = "Peta Tematik .png" width = "1000" height = "500">
 
 <b> Tabel Anggota <i>Cluster</i> </b>
 <table border="1">
@@ -109,5 +127,89 @@ Sulawesi Barat, Maluku, Maluku Utara, Papua Barat</td>
 
 ### Karakteristik Setiap <i>Cluster</i>
 
+<img src = "Karakteristik Setiap Cluster.png" width = "1000" height = "500">
+
+<table border="1">
+  <thead>
+    <tr>
+      <th> <i> Cluster </i> </th>
+      <th> Karakteristik </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 1 </td>
+      <td>  
+- APS (X1): 75,45 (tinggi, tetapi masih di bawah Cluster 3). <br>
+- APK (X2): 89,50 (cukup tinggi, kedua tertinggi). <br>
+- APM (X3): 67,86 (kedua tertinggi). <br>
+- AMH (X4): 99,11 (tertinggi kedua). <br>
+- Rata-rata Lama Sekolah (X5): 9,27 (ketiga terendah).<br>
+- Tingkat Penyelesaian SMA (X6): 65,17 (kedua tertinggi).<br> 
+      </td>
+    </tr>
+    <tr>
+      <td> 2 </td>
+      <td> 
+- APS (X1): 72,50 (rendah dibanding cluster lain). <br>
+- APK (X2): 77,40 (terendah kedua).<br>
+- APM (X3): 60,81 (terendah).<br>
+- AMH (X4): 99,88 (tertinggi).<br>
+- Rata-rata Lama Sekolah (X5): 11,42 (tertinggi).<br>
+- Tingkat Penyelesaian SMA (X6): 88,10 (tertinggi).<br>
+      </td>
+    </tr>
+    <tr>
+      <td> 3 </td>
+      <td> 
+ - APS (X1): 91,17 (tertinggi). <br>
+- APK (X2): 90,82 (tertinggi). <br>
+- APM (X3): 77,77 (tertinggi). <br>
+- AMH (X4): 99,07 (kedua tertinggi). <br>
+- Rata-rata Lama Sekolah (X5): 10,16 (kedua tertinggi). <br>
+- Tingkat Penyelesaian SMA (X6): 89,69 (tertinggi). <br> 
+      </td>
+    </tr>
+    <tr>
+      <td> 4 </td>
+      <td> 
+- APS (X1): 64,15 (terendah).<br>
+- APK (X2): 73,90 (kedua terendah).<br>
+- APM (X3): 63,27 (ketiga terendah).<br>
+- AMH (X4): 84,83 (terendah).<br>
+- Rata-rata Lama Sekolah (X5): 7,32 (terendah).<br>
+- Tingkat Penyelesaian SMA (X6): 39,50 (terendah).<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ### Kesimpulan 
+<table border="1">
+  <thead>
+    <tr>
+      <th> <i> Cluster </i> </th>
+      <th> Provinsi </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 1 </td>
+      <td> Fokus untuk meningkatkan rata-rata lama sekolah penduduk agar selaras dengan tingkat penyelesaian SMA yang sudah cukup baik.
+</td>
+    </tr>
+    <tr>
+      <td> 2 </td>
+      <td> Fokus pada peningkatan partisipasi pendidikan (APS, APK, APM), karena meskipun AMH dan lama sekolah tinggi, partisipasi sekolah masih rendah. </td>
+    </tr>
+    <tr>
+      <td> 3 </td>
+      <td> Cluster ini memiliki indikator pendidikan terbaik, dengan tingkat partisipasi dan penyelesaian pendidikan tertinggi. </td>
+    </tr>
+    <tr>
+      <td> 4 </td>
+      <td> Cluster ini membutuhkan perhatian paling besar, terutama dalam meningkatkan angka melek huruf, rata-rata lama sekolah, dan partisipasi pendidikan. </td>
+    </tr>
+  </tbody>
+</table>
 
