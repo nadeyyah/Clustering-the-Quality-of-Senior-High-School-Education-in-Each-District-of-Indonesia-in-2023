@@ -39,6 +39,7 @@ X6 : Tingkat penyelesaian pendidikan minimal tamat SMA/sederajat <br>
 - Angka Melek Huruf (AHM):  Proporsi penduduk kelompok umur tertentu yang memiliki kemampuan membaca dan menulis kalimat sederhana dalam huruf latin, huruf arab, dan huruf lainnya (seperti huruf jawa, kanji, dll) terhadap
 penduduk kelompok umur tersebut.
 <br>
+
 # 🔍 Metode yang Digunakan
 <p align = "left">
 Metode yang digunakan pada analisis kali ini adalah <b> Analisis Klaster Hierarki </b>, dikarenakan belum ditemukan terkait banyak claster yang akan digunakan sebab belum ada penelitian terdahulu yang membahas secara detail. 
@@ -53,7 +54,7 @@ Bahasa pemrograman yang digunakan dalam proses analisis data adalah <b>R</b>, de
 5. library(tidyverse) <br>
 6. library(clusterSim) <br>
 </b>
-  
+
 # 📋 Hasil Analisis
 ## 📊 Statistika Deskriptif
 Beberapa informasi penting yang dapat diambil dari output tersebut yaitu: <br>
@@ -69,6 +70,9 @@ setiap Provinsi.
 ## 🌍 Analisis <i> Cluster </i>
 
 ### Korelasi Jarak <i> Cophnetic </i>
+
+<img src = "Jarak Cophnetic.png">
+
 Berdasarkan analisis yang telah dilakukan, diperoleh hasil bila metode <i>Average Linkage </i> memiliki korelasi terbesar dengan nilai 
 <b> 0.8716066 </b>, dengan demikian data disimpulkan bila metode <i> Average Linkage </i> merupakan metode pengelompokan terbaik. 
 
@@ -77,6 +81,8 @@ Terdapat 3 metode yang digunakan untuk mengetahui jumlah <i>cluster</i> optimal,
 1. <i> Elbow </i> <br>
 2. <i> Silhouette Score </i> <br>
 3. <i> David Bouldin Index </i>
+
+<img src = "Jumlah Cluster Optimal.png">
 
 - <b> Metode Elbow </b>: Berdasarkan plot tersebut terlihat bahwa pada saat jumlah cluster sebanyak 4 sudah tidak terjadi penurunan   WSS yang signifikan. <br>
 - <b> Silhouette Score </b>:Berdasarkan plot diatas,terlihat bahwa nilai 
