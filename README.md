@@ -1,6 +1,5 @@
 # Clustering the Quality of Senior High School Education in Each District of Indonesia in 2023
 
-Credit: Nadia Alzena, Fathina Arifa, Sherly Adinda, Aulia Naurah 
 <div style="text-align: center;">
   <img src="https://asset.kompas.com/crops/re-smGujOpms3lbCmHyEeCm4GiY=/46x160:755x633/1200x800/data/photo/2022/05/14/627f60a0ec075.jpg" 
        alt="BANNER SMA" 
