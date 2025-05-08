@@ -197,7 +197,7 @@ Sulawesi Barat, Maluku, Maluku Utara, Papua Barat</td>
   <thead>
     <tr>
       <th> <i> Cluster </i> </th>
-      <th> Provinsi </th>
+      <th> Kesimpulan </th>
     </tr>
   </thead>
   <tbody>
